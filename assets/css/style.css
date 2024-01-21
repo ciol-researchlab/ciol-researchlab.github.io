@@ -688,7 +688,6 @@ body {
           display: none;
         }
       }
-
 .btn-disabled {
   display: inline-block;
   margin-bottom: 1rem;
@@ -720,6 +719,9 @@ body {
         margin-top: 1rem;
         margin-left: 0; } }
 
+.bactive {
+  border-width: 4px;
+ }
 .page-header {
   color: white;
   text-align: center;
@@ -1000,7 +1002,6 @@ abstract {
 
 
 .person {
-  flex-basis: 30%;
   text-align: center;
 }
 
