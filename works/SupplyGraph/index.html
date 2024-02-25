@@ -161,15 +161,65 @@
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths" >
-        <h2 class="title is-3">Architecture</h2>
+        <h2 class="title is-3">Problem Formulation</h2>
           <img src="./static/images/1-formulation.png">
-          <p>
-          Formulation.</p> 
+
+          <p></br></br></p>
+
+          <h2 class="title is-3">Dataset Information</h2>
+          <p></br></p>
+    <h3 class="title is-4">Dataset Statistics (homogeneous)</h3>
+    <img src="./static/images/1.jpg" width="70%">
+    <p style="text-align: justify;">
+    
+    </p>
+
+    <p></br></p>
+<h3 class="title is-4">Temporal Features</h3>
+<img src="./static/images/2.jpg">
+<p style="text-align: justify;">
+  Figure 5, A particularly attractive pattern emerges: the production curve exhibits distinct and sharp fluctuations. Notably, the production unit of
+  the company occasionally closes, which can be attributed
+  to factors such as scheduled vacations, adjustments in the
+  product’s MRP rate, demand variations, and optimizations in
+  transportation policies. In contrast, the other aspects of the
+  graph, encompassing sales orders, delivery to distributors,
+  and factory issuance, remain notably stable and consistent.
+  Their minimal deviations stand in contrast to the variabilities
+  characterizing the production curve, providing an insight into
+  the dynamics of the supply chain activities.
+  In, Figure 6, we can notice a very interesting pattern. The
+  product is manufactured in large batches, with orders being
+  accumulated over several days before production begins. The
+  processes of delivering to distributors, handling factory issues, and fulfilling sales orders appear to be running smoothly
+  and consistently. The company has opted to operate the production plant intermittently and maintain product inventory.
+  When you observe straight lines in the production graph, it
+  indicates that the plant is not actively engaged in production
+  during those periods.
+</p>
+
+<p></br></p>
+<h3 class="title is-4">Feature Co-relations</h3>
+<img src="./static/images/3.jpg">
+<p style="text-align: justify;">
+  The correlation plot
+portrayed in Figure 7 serves to demonstrate the ways in which
+diverse subgroups of product "A" are interconnected in a
+multitude of facets. It is worth noting that the relationship
+between delivery to distributors and sales orders is particularly robust, whereas the production unit exhibits a distinct
+and prominent correlation pattern. Furthermore, a noteworthy observation pertains to the correlation between the production quantities of two subgroups, specifically "ATWWPOO2K12P" and "ATWWPOO1K24P". Additionally, it is
+worth highlighting that factory issues and sales orders similarly display correlation trends, albeit with some discernible
+variations.
+Upon examining the correlation plot of the "S" subgroup in
+Figure 8, a distinct pattern becomes apparent: there is a significant and consistent correlation between the "SOSOO1L12P"
+and "SOS500M24P" subgroups across all variables. Notably,
+an intriguing observation arises in the context of sales orders,
+where a majority of the products within the "S" subgroup
+demonstrate a relatively higher correlation compared to delivery to distributors, factory issuances, and production.
+</p>
+
       </div>
     </div>
-
-
-
 
 
   </div>
@@ -183,6 +233,7 @@
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
         <p >
+          <h2 class="title is-3">Use cases</h2>
           
           <p>Our dataset’s structural design models products as nodes, while the
             interrelationships, such as shared product groups, subgroups, production
@@ -227,6 +278,38 @@
             model the intricate relationships between nodes and edges, enabling
             efficient allocation of resources, route planning, and inventory
             management, ultimately leading to improved performance.</p>
+
+<p>
+            <b>Heterogeneous Graphs.</b> All these tasks can be executed in
+both heterogeneous and homogeneous forms. In the context
+of the heterogeneous approach, the incorporation of nodes
+representing distinct entities, such as products, storage locations, and production facilities, interconnected by edges
+that signify their intricate relationships, becomes a pivotal
+strategy. This approach facilitates the construction of a heterogeneous graph model, which effectively encapsulates the intricate web of interactions inherent in supply chain networks.
+Embracing these heterogeneous models affords us the capacity to encompass the varied characteristics of different supply
+chain components and their complex interdependencies. This
+approach proves instrumental in addressing the multifaceted
+challenges that characterize supply chain management. The
+ability to comprehensively represent and analyze these heterogeneous relationships equips decision-makers with a deeper
+understanding of the dynamics within the supply chain, empowering them to devise optimized strategies and adapt to
+the dynamic nature of supply chain operations. In doing so,
+overall supply chain performance and resilience can be significantly enhanced.
+</p>
+<p>
+  <b>Hypergraphs.</b> Efficient task execution can also be
+achieved through hypergraph models. Nodes, representing
+entities like products, storage locations, and production facilities, intricately interconnect through hyperedges, capturing
+the intricate relationships within supply chain networks. This
+strategic use of hyperedges facilitates the construction of a
+tailored hypergraph model, adept at encapsulating the complex web of interactions inherent in supply chain networks.
+The adoption of hypergraph models can provide a dynamic
+framework to address the diverse characteristics and intricate
+interdependencies of supply chain components, serving as
+a pivotal strategy for managing the multifaceted challenges
+inherent in supply chain management and fostering a deeper
+understanding of its dynamics, which can contribute to the
+enhancement of overall supply chain performance and resilience.
+</p>
             
         </p></div>
         <div class="content has-text-justified">   
@@ -238,7 +321,21 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop" >
 
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths" >
+        <h2 class="title is-3">Model Scores</h2>
+          <img src="./static/images/4.jpg">
+
+
+      </div>
+    </div>
+
+
+  </div>
+</section>
 
 
 <section class="section" id="BibTeX">
