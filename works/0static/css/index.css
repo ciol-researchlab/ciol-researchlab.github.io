@@ -12,6 +12,10 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.is-max-desktop{
+  max-width: 70%;
+}
+
 
 .dnerf {
   font-variant: small-caps;
@@ -20,7 +24,12 @@ body {
 
 .teaser .hero-body {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 0;
+}
+
+.hero-body {
+  padding-bottom: 0; 
+  margin-bottom: 0;
 }
 
 .teaser {
