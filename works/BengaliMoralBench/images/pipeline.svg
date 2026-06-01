@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" font-family="Inter, ui-sans-serif, system-ui, Arial">
+  <defs>
+    <linearGradient id="step" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c1a12"/>
+      <stop offset="1" stop-color="#231209"/>
+    </linearGradient>
+    <linearGradient id="num" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c87f45"/>
+      <stop offset="1" stop-color="#8b4a2b"/>
+    </linearGradient>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#c87f45"/>
+    </marker>
+  </defs>
+
+  <!-- ROW A: Benchmark creation -->
+  <text x="40" y="34" fill="#c9a98f" font-size="13" font-weight="700" letter-spacing="2">(a) BENCHMARK CREATION</text>
+  <g font-size="12.5" fill="#f4e9df" font-weight="700" text-anchor="middle">
+    <g><rect x="40" y="48" width="150" height="62" rx="10" fill="url(#step)" stroke="rgba(200,127,69,0.3)"/><text x="115" y="76">Annotator</text><text x="115" y="94">recruitment (30)</text></g>
+    <g><rect x="214" y="48" width="150" height="62" rx="10" fill="url(#step)" stroke="rgba(200,127,69,0.3)"/><text x="289" y="76">Topic taxonomy</text><text x="289" y="94">design</text></g>
+    <g><rect x="388" y="48" width="150" height="62" rx="10" fill="url(#step)" stroke="rgba(200,127,69,0.3)"/><text x="463" y="76">Instance</text><text x="463" y="94">writing</text></g>
+    <g><rect x="562" y="48" width="150" height="62" rx="10" fill="url(#step)" stroke="rgba(200,127,69,0.3)"/><text x="637" y="76">Pilot label</text><text x="637" y="94">annotation</text></g>
+    <g><rect x="736" y="48" width="150" height="62" rx="10" fill="url(#step)" stroke="rgba(200,127,69,0.3)"/><text x="811" y="72">Quality control</text><text x="811" y="90">&amp; validation</text><text x="811" y="104" fill="#c87f45" font-size="10.5">2-stage</text></g>
+    <g><rect x="910" y="48" width="150" height="62" rx="10" fill="url(#num)"/><text x="985" y="76" fill="#fff">Final</text><text x="985" y="94" fill="#fff">benchmark</text></g>
+  </g>
+  <g stroke="#c87f45" stroke-width="2">
+    <line x1="190" y1="79" x2="212" y2="79" marker-end="url(#ar)"/>
+    <line x1="364" y1="79" x2="386" y2="79" marker-end="url(#ar)"/>
+    <line x1="538" y1="79" x2="560" y2="79" marker-end="url(#ar)"/>
+    <line x1="712" y1="79" x2="734" y2="79" marker-end="url(#ar)"/>
+    <line x1="886" y1="79" x2="908" y2="79" marker-end="url(#ar)"/>
+  </g>
+
+  <!-- connector -->
+  <path d="M985 110 L985 150 L115 150 L115 196" fill="none" stroke="#8b4a2b" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- ROW B: Evaluation -->
+  <text x="40" y="186" fill="#c9a98f" font-size="13" font-weight="700" letter-spacing="2">(b) LLM EVALUATION</text>
+  <g font-size="12.5" fill="#f4e9df" font-weight="700" text-anchor="middle">
+    <g><rect x="40" y="200" width="150" height="62" rx="10" fill="url(#num)"/><text x="115" y="228" fill="#fff">Final</text><text x="115" y="246" fill="#fff">benchmark</text></g>
+    <g><rect x="214" y="200" width="232" height="62" rx="10" fill="url(#step)" stroke="rgba(200,127,69,0.3)"/>
+       <text x="330" y="224">Choose ethics lens</text>
+       <text x="330" y="246" fill="#c87f45" font-size="11.5">Justice · Commonsense · Virtue</text></g>
+    <g><rect x="470" y="200" width="150" height="62" rx="10" fill="url(#step)" stroke="rgba(200,127,69,0.3)"/><text x="545" y="228">Prompt</text><text x="545" y="246">design</text></g>
+    <g><rect x="644" y="200" width="150" height="62" rx="10" fill="url(#step)" stroke="rgba(200,127,69,0.3)"/><text x="719" y="228">LLM</text><text x="719" y="246">inference</text></g>
+    <g><rect x="818" y="200" width="242" height="62" rx="10" fill="url(#step)" stroke="rgba(200,127,69,0.3)"/><text x="939" y="224">Prediction &amp; evaluation</text><text x="939" y="246" fill="#c87f45" font-size="11.5">Acc · F1 · MCC · Cohen's κ</text></g>
+  </g>
+  <g stroke="#c87f45" stroke-width="2">
+    <line x1="190" y1="231" x2="212" y2="231" marker-end="url(#ar)"/>
+    <line x1="446" y1="231" x2="468" y2="231" marker-end="url(#ar)"/>
+    <line x1="620" y1="231" x2="642" y2="231" marker-end="url(#ar)"/>
+    <line x1="794" y1="231" x2="816" y2="231" marker-end="url(#ar)"/>
+  </g>
+
+  <text x="550" y="304" text-anchor="middle" fill="#c9a98f" font-size="12">Output is binary: "1" (ethical) or "0" (unethical). Prompts are minimalistic with no definitions, probing internalized moral knowledge.</text>
+</svg>

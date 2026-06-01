@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" font-family="Inter, ui-sans-serif, system-ui, Arial">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c87f45"/>
+      <stop offset="1" stop-color="#8b4a2b"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c1a12"/>
+      <stop offset="1" stop-color="#231209"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#c87f45"/>
+    </marker>
+  </defs>
+
+  <!-- TITLE -->
+  <text x="550" y="34" text-anchor="middle" fill="#c9a98f" font-size="15" font-weight="700" letter-spacing="2">BENGALIMORALBENCH · 3,000 CULTURALLY GROUNDED MORAL SCENARIOS</text>
+
+  <!-- THREE LENSES -->
+  <text x="550" y="66" text-anchor="middle" fill="#e7cdb4" font-size="13" font-weight="700">Triadic moral reasoning framework</text>
+  <g>
+    <rect x="60" y="80" width="300" height="86" rx="12" fill="url(#panel)" stroke="rgba(200,127,69,0.4)" stroke-width="1.5"/>
+    <text x="84" y="110" fill="#f4e9df" font-size="19" font-weight="800">Virtue Ethics</text>
+    <text x="84" y="132" fill="#c9a98f" font-size="12.5">Character: satyata, daya, shraddha,</text>
+    <text x="84" y="150" fill="#c9a98f" font-size="12.5">taqwa, dharma, binamrata.</text>
+  </g>
+  <g>
+    <rect x="400" y="80" width="300" height="86" rx="12" fill="url(#panel)" stroke="rgba(200,127,69,0.4)" stroke-width="1.5"/>
+    <text x="424" y="110" fill="#f4e9df" font-size="19" font-weight="800">Commonsense</text>
+    <text x="424" y="132" fill="#c9a98f" font-size="12.5">Samajik gyan: reputation (izzat),</text>
+    <text x="424" y="150" fill="#c9a98f" font-size="12.5">hierarchy, hospitality, propriety.</text>
+  </g>
+  <g>
+    <rect x="740" y="80" width="300" height="86" rx="12" fill="url(#panel)" stroke="rgba(200,127,69,0.4)" stroke-width="1.5"/>
+    <text x="764" y="110" fill="#f4e9df" font-size="19" font-weight="800">Justice Ethics</text>
+    <text x="764" y="132" fill="#c9a98f" font-size="12.5">Nyay, samata, adhikar: insaf, zakat,</text>
+    <text x="764" y="150" fill="#c9a98f" font-size="12.5">inheritance, gender roles.</text>
+  </g>
+
+  <line x1="550" y1="166" x2="550" y2="206" stroke="#c87f45" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- FIVE DOMAINS -->
+  <text x="550" y="226" text-anchor="middle" fill="#e7cdb4" font-size="13" font-weight="700">Five life domains — 10 subtopics each — 50 subtopics total</text>
+  <g font-size="13.5" font-weight="700" fill="#f4e9df">
+    <g>
+      <rect x="44" y="240" width="196" height="64" rx="11" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+      <text x="142" y="270" text-anchor="middle">Daily Activities</text>
+      <text x="142" y="290" text-anchor="middle" fill="#c87f45" font-size="11.5">load-shedding, rickshaw fare</text>
+    </g>
+    <g>
+      <rect x="252" y="240" width="196" height="64" rx="11" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+      <text x="350" y="270" text-anchor="middle">Habits</text>
+      <text x="350" y="290" text-anchor="middle" fill="#c87f45" font-size="11.5">right/left-hand use, littering</text>
+    </g>
+    <g>
+      <rect x="460" y="240" width="196" height="64" rx="11" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+      <text x="558" y="270" text-anchor="middle">Parenting</text>
+      <text x="558" y="290" text-anchor="middle" fill="#c87f45" font-size="11.5">madrasa vs general, screen time</text>
+    </g>
+    <g>
+      <rect x="668" y="240" width="196" height="64" rx="11" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+      <text x="766" y="270" text-anchor="middle">Family Relations</text>
+      <text x="766" y="290" text-anchor="middle" fill="#c87f45" font-size="11.5">dowry, inheritance, elders</text>
+    </g>
+    <g>
+      <rect x="876" y="240" width="180" height="64" rx="11" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+      <text x="966" y="270" text-anchor="middle">Religious</text>
+      <text x="966" y="290" text-anchor="middle" fill="#c87f45" font-size="11.5">zakat, qurbani, hijab</text>
+    </g>
+  </g>
+
+  <line x1="550" y1="304" x2="550" y2="344" stroke="#c87f45" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- COMPOSITION -->
+  <rect x="120" y="356" width="860" height="92" rx="14" fill="rgba(200,127,69,0.08)" stroke="url(#accent)" stroke-width="2"/>
+  <text x="550" y="386" text-anchor="middle" fill="#f4e9df" font-size="16" font-weight="800">Each subtopic: 20 instances = 10 ethical (label 1) + 10 unethical (label 0)</text>
+  <text x="550" y="414" text-anchor="middle" fill="#c9a98f" font-size="13.5">50 subtopics × 20 = 1,000 per framework × 3 frameworks</text>
+  <text x="550" y="436" text-anchor="middle" fill="#c87f45" font-size="14" font-weight="800">= 3,000 instances · 52% labeled country-specific (CS)</text>
+
+  <!-- OUTCOME -->
+  <text x="550" y="480" text-anchor="middle" fill="#c9a98f" font-size="13.5" font-weight="700">Native-speaker consensus annotation (κ improved 0.61 → 0.87) · binary labels · zero-shot evaluation in Bengali and English</text>
+  <text x="550" y="520" text-anchor="middle" fill="#e7cdb4" font-size="15" font-weight="800">Diagnostic of cultural grounding, commonsense reasoning, and moral fairness in multilingual LLMs</text>
+</svg>

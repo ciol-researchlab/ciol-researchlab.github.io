@@ -1,0 +1,117 @@
+/* --- Reset & palette --- */
+:root{
+  --bg:#241712; /* warm dark chocolate background */
+  --panel:#1c120d;
+  --card:#1c120d;
+  --muted:#c9a98f;
+  --accent:#c87f45; /* chocolate / caramel accent */
+  --accent-2:#8b4a2b;
+  --glass: rgba(255,236,220,0.04);
+  --glass-2: rgba(255,236,220,0.025);
+  --white:#f4e9df;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#1b0f0a 0%, #2a1810 60%);color:var(--white);-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:1100px;margin:28px auto;padding:20px;padding-top:120px;}
+
+/* Floating header: fixed to viewport so it remains visible while scrolling */
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(28,16,11,0.96), rgba(36,23,16,0.93));box-shadow:0 10px 40px rgba(2,6,23,0.7);position:fixed;top:20px;left:50%;transform:translateX(-50%);width:calc(100% - 56px);max-width:1100px;z-index:1000;backdrop-filter: blur(6px);}
+.brand{display:flex;gap:14px;align-items:center}
+.logo{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#5a2f1c);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:20px;overflow:hidden}
+.logo img{width:100%;height:100%;object-fit:contain;border-radius:8px;display:block}
+.logo--plain{background:transparent}
+h1{font-size:20px;margin:0}
+.subtitle{color:var(--muted);font-size:13px;margin-top:6px}
+nav{display:flex;gap:12px}
+nav a{padding:8px 12px;border-radius:8px;background:transparent;color:var(--muted);font-weight:600}
+nav a:hover{background:var(--glass);color:var(--white)}
+
+/* ---- hero ---- */
+.hero{margin-top:18px;padding:28px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 10px 40px rgba(2,6,23,0.6)}
+.hero-grid{display:grid;grid-template-columns:1fr 360px;gap:18px}
+.hero-grid-single{display:grid;grid-template-columns:1fr;max-width:1000px;margin:0 auto;text-align:center}
+
+/* Center hero content and ensure content is centered */
+.hero .hero-grid{justify-items:center}
+.hero .hero-grid-single > div{text-align:center;max-width:100%}
+.hero .hero-grid-single h2,
+.hero .hero-grid-single p{margin-left:auto;margin-right:auto;max-width:960px}
+
+/* center pill badges inside the hero */
+.hero .pill{margin:5px auto 0 auto}
+.tag{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);color:var(--muted);font-size:12px;margin-right:8px}
+
+/* ---- cards / sections ---- */
+section{margin-top:18px; border-radius:12px; padding:20px; background:linear-gradient(180deg,var(--glass),var(--glass-2)); box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+h2{margin-top:0;color:var(--white)}
+p.lead{color:var(--muted);margin:6px 0 12px 0}
+.columns{display:grid;grid-template-columns:1fr 320px;gap:18px}
+.meta{color:var(--muted);font-size:13px}
+.figure{background:rgba(255,255,255,0.02);padding:10px;border-radius:10px;text-align:center}
+img.resp{max-width:none;width:100%;height:auto;border-radius:8px;display:block;margin:0 auto}
+
+/* Ensure images inside .figure take full available width of the content box */
+.figure img.resp{width:100%;max-width:none}
+/* boxed figure: use .figure and .resp for responsive boxed images */
+
+/* tables */
+.table-wrap{overflow:auto;margin-top:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));padding:10px;border-radius:10px}
+table{width:100%;border-collapse:collapse;color:var(--white);font-size:13px}
+th,td{padding:8px 10px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:left}
+th{position:sticky;top:0;background:rgba(255,255,255,0.02);font-weight:700;color:var(--muted)}
+tr.section{background:linear-gradient(90deg, rgba(200,127,69,0.10), rgba(139,74,43,0.05));font-weight:700}
+
+/* pills, badges */
+.pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.02);color:var(--muted);font-size:12px;margin:5px 6px 0 0}
+
+/* Ensure preformatted blocks wrap inside their container instead of overflowing */
+pre {
+  white-space: pre-wrap;      /* preserve newlines but allow wrapping */
+  word-wrap: break-word;     /* older name for overflow-wrap */
+  overflow-wrap: anywhere;   /* break long words/URLs if needed */
+  hyphens: auto;             /* allow hyphenation where supported */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* subtle vertical spacing for list items (apply to unordered/ordered and definition lists) */
+li, dt, dd { padding: 1px 0; }
+
+/* Light boxed figure variant (for inline SVGs that need a creamy background) */
+.figure--light{background: #fff8ef; color: #0b1220;}
+.figure--light .meta{color:#6b6b6b}
+.figure--light img.resp{border-radius:6px}
+
+/* Zoom hint shown on hover/focus */
+.figure--light{position:relative}
+.figure--light .zoom-hint{position:absolute;left:12px;bottom:10px;background:rgba(11,18,32,0.9);color:#fff;padding:6px 8px;border-radius:8px;font-size:12px;opacity:0;transform:translateY(6px);transition:opacity .18s ease, transform .18s ease;pointer-events:none}
+.figure--light:hover .zoom-hint,.figure--light:focus-within .zoom-hint{opacity:1;transform:translateY(0)}
+
+/* Zoom overlay */
+.zoom-backdrop{position:fixed;inset:0;background:rgba(2,6,23,0.7);display:flex;align-items:center;justify-content:center;z-index:2000;opacity:0;pointer-events:none;transition:opacity .18s ease}
+.zoom-backdrop.open{opacity:1;pointer-events:auto}
+.zoomed-img{max-width:95vw;max-height:80vh;box-shadow:0 20px 60px rgba(2,6,23,0.6);border-radius:12px;transition:transform .18s ease;background:#ffffff;padding:10px}
+.zoomed-img img{display:block;width:auto;height:auto;max-height:80vh;max-width:95vw;border-radius:8px}
+
+/* If the zoom content contains an inline SVG, make it responsive inside the white panel */
+.zoomed-img svg{display:block;max-height:80vh;max-width:95vw;height:auto;width:auto}
+.zoomed-img svg *{vector-effect:non-scaling-stroke}
+
+/* Accessibility: outline when focused */
+.figure--light img[role="button"]:focus{outline:3px solid rgba(200,127,69,0.45);outline-offset:3px}
+
+/* responsive */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .columns{grid-template-columns:1fr}
+  nav{display:none}
+  /* mobile adjustments for fixed header */
+  header{left:0;transform:none;width:100%;border-radius:0;top:0;background:linear-gradient(180deg, rgba(28,16,11,0.98), rgba(36,23,16,0.98));}
+  .wrap{padding-top:88px}
+}
+
+/* small footer */
+footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+.download-btn{display:inline-block;padding:12px 16px;margin:2px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#8b4a2b);color:white;font-weight:700}
+code{background:rgba(255,255,255,0.02);padding:6px;border-radius:6px;color:var(--white)}
